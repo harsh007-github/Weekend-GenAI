@@ -31,3 +31,4 @@ Weekend-GenAI/
 ├── main.py             # Primary entry point, role switcher, chat loop, and LangChain pipeline
 ├── requirements.txt    # Dependency definitions (LangChain, transformers, scikit-learn, etc.)
 └── .env                # Environment variables (GOOGLE_API_KEY)
+└── venv/               # Virtual Environement  
