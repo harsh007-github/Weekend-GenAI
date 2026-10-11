@@ -1,8 +1,8 @@
 {
   "personal_info": {
-    "name": "Raushan Ranjan",
-    "phone": "+91-9798531718",
-    "email": "raushanranjan841@gmail.com",
+    "name": "Harsh Khandelwal",
+    "phone": "+91-xxxxxxxx",
+    "email": "xyzzzzz@gmail.com",
     "links": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
@@ -13,7 +13,7 @@
   "summary": "Software Developer with 2+ years of experience building and deploying scalable B2B SaaS products using Python, Node.js, REST APIs, cloud infrastructure, and modern databases[cite: 1]. Experienced in developing backend systems from design to production, collaborating across cross-functional teams, and delivering reliable, high-performance solutions for enterprise customers[cite: 1].",
   "work_experience": [
     {
-      "company": "Teknikforce Venture",
+      "company": "XYZ Company",
       "role": "Software Developer (AI/ML)",
       "duration": "Feb 2024-Aug 2025",
       "location": "Remote",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "company": "Milestone OS",
+      "company": "ABC Company",
       "role": "MERN Stack Developer Intern",
       "duration": "Jul 2023-Jan 2024",
       "location": "Remote",
