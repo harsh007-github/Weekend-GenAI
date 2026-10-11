@@ -1,0 +1,139 @@
+{
+  "personal_info": {
+    "name": "Raushan Ranjan",
+    "phone": "+91-9798531718",
+    "email": "raushanranjan841@gmail.com",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "leetcode": "LeetCode",
+      "codechef": "Codechef"
+    }
+  },
+  "summary": "Software Developer with 2+ years of experience building and deploying scalable B2B SaaS products using Python, Node.js, REST APIs, cloud infrastructure, and modern databases[cite: 1]. Experienced in developing backend systems from design to production, collaborating across cross-functional teams, and delivering reliable, high-performance solutions for enterprise customers[cite: 1].",
+  "work_experience": [
+    {
+      "company": "Teknikforce Venture",
+      "role": "Software Developer (AI/ML)",
+      "duration": "Feb 2024-Aug 2025",
+      "location": "Remote",
+      "responsibilities": [
+        "Engineered Python/FastAPI backend services and REST APIs that automated AI-driven lead discovery, reducing manual effort by 90% and generating 1,000+ qualified business leads[cite: 1].",
+        "Built backend data pipelines to process thousands of web pages, implementing RAG-based semantic search with 100,000+ vector embeddings for efficient information retrieval[cite: 1].",
+        "Integrated OpenAI, Gemini, and Claude APIs into 5+ B2B SaaS products, developing backend services, authentication, and production-ready AI features[cite: 1].",
+        "Containerized and deployed backend applications on AWS EC2 using Docker and Nginx, handling 10,000+ daily API requests with scalable, low-latency processing[cite: 1]."
+      ]
+    },
+    {
+      "company": "Milestone OS",
+      "role": "MERN Stack Developer Intern",
+      "duration": "Jul 2023-Jan 2024",
+      "location": "Remote",
+      "responsibilities": [
+        "Developed end-to-end web features using React.js, Node.js, Express.js, and MongoDB, implementing JWT authentication and reusable REST APIs across the application stack[cite: 1].",
+        "Addressed unreliable spam-call filtering by developing backend processing modules for the detection pipeline, improving detection accuracy and throughput[cite: 1]."
+      ]
+    }
+  ],
+  "project_details": [
+    {
+      "name": "Industrial Knowledge Intelligence Platform",
+      "tech_stack": [
+        "Python",
+        "FastAPI",
+        "Neo4j",
+        "Qdrant",
+        "Docker",
+        "AWS"
+      ],
+      "description": "Built an enterprise knowledge platform using FastAPI with RAG, Knowledge Graphs, and Agentic AI for intelligent document search and question answering across PDFs, Word, Excel, and CSV files[cite: 1]. Designed a modular backend architecture for multi-format document ingestion, semantic retrieval, knowledge-graph traversal, and agent workflows; containerized and deployed services on AWS using Docker[cite: 1]."
+    },
+    {
+      "name": "DiggyMiner AI",
+      "tech_stack": [
+        "Python",
+        "Flask",
+        "LangChain",
+        "Pinecone",
+        "AWS",
+        "Docker"
+      ],
+      "description": "Developed a backend web intelligence platform with REST APIs for web crawling, semantic search, and AI-powered content retrieval using LangChain and Pinecone[cite: 1]. Containerized services with Docker and deployed on AWS EC2, optimizing vector search to achieve sub-second response time for large-scale document retrieval[cite: 1]."
+    },
+    {
+      "name": "Distributed Intrusion Detection System",
+      "tech_stack": [
+        "Python",
+        "Apache Spark",
+        "CNN",
+        "LSTM"
+      ],
+      "description": "Built a distributed intrusion detection pipeline using Apache Spark for large-scale network traffic preprocessing and CNN-LSTM for attack detection, achieving 95% classification accuracy[cite: 1]. Designed modular data processing workflows for scalable feature engineering, model training, and evaluation on CICIDS-2018 and DDoS-2019 datasets[cite: 1]."
+    }
+  ],
+  "skills": {
+    "programming_languages": [
+      "Python",
+      "JavaScript",
+      "SQL",
+      "MongoDB"
+    ],
+    "backend_technologies": [
+      "System Design",
+      "HLD",
+      "FastAPI",
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "MVC",
+      "middleware",
+      "monolithic"
+    ],
+    "software_engineering": [
+      "DSA",
+      "Object-Oriented Programming (OOP)",
+      "API Design"
+    ],
+    "databases": [
+      "MySQL",
+      "Neo4j",
+      "Pinecone",
+      "Qdrant"
+    ],
+    "cloud_and_devops": [
+      "AWS (EC2, S3)",
+      "Docker",
+      "Nginx",
+      "Linux",
+      "Git",
+      "GitHub",
+      "Github actions",
+      "CI/CD"
+    ],
+    "ai_technologies": [
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "Agentic AI",
+      "AI integration"
+    ]
+  },
+  "education": [
+    {
+      "institution": "National Institute of Technology Raipur",
+      "degree": "M. Tech in Information Technology",
+      "duration": "Aug 2025-Jul 2027",
+      "grade": "CGPA: 8.57"
+    },
+    {
+      "institution": "Quantum University",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "duration": "Aug 2019-Jun 2023"
+    }
+  ],
+  "achievements_and_certifications": [
+    "Amazon Machine Learning Summer School-2026- Competed and selected among 1 lakh 34 thousand students[cite: 1]",
+    "Generative AI with LLMs - Completed hands-on training in neural networks and AI model development[cite: 1].",
+    "Deep Learning: Concept to Application - Presented an AI face generation system trained on 200k+ images and secured 1st position[cite: 1]."
+  ]
+}

@@ -29,7 +29,6 @@ robust_model = model.with_retry(
 parser = StrOutputParser()
 
 # Runnables chained together
-chain = RunnableLambda(validate_input) | template | robust_model | parser
 
 
 roles = ['Interviewer', 'Research Assistant', 'Summarizer', 'AI Chat Bot']
@@ -51,6 +50,7 @@ print(f"Chat Session Started (Role: {selected_role})")
 print("Type 'exit' or 'quit' to end the session.\n")
 print("Type 'role' to change the system role.\n")
 
+chain = RunnableLambda(validate_input) | template | robust_model | parser
 # Chat Loop
 while True:
     user_input = input('Task: ')

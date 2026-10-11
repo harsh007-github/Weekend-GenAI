@@ -1,0 +1,51 @@
+{
+  "job_details": {
+    "company": "Myntra",
+    "role": "Software Engineering Internship",
+    "window": "Jan-Jun 2027",
+    "mode": "WFO Bengaluru",
+    "stipend": "₹70,000/month",
+    "eligible_batch": "B.Tech 2027"
+  },
+  "skills_required": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript",
+    "Agile",
+    "Scrum",
+    "Data Structures and Algorithms (DSA)",
+    "Object-Oriented Programming (OOP)",
+    "Git",
+    "Coding agents automation"
+  ],
+  "roles_and_responsibilities": [
+    "Assists in the design, development, testing, and deployment of software applications, writing clean and maintainable code.",
+    "Participates in code reviews and contributes to team discussions.",
+    "Collaborates with cross-functional teams to define and implement new features.",
+    "Debugs and troubleshoots software issues.",
+    "Documents technical specifications and development processes.",
+    "Stays updated with emerging trends and technologies in software engineering.",
+    "Leverages coding agents to automate routine tasks and accelerate development velocity."
+  ],
+  "qualifications_and_experience": [
+    "Currently pursuing a Bachelor's degree in Computer Science, IT, AI/ML or related branches.",
+    "Knowledge of at least one programming language (e.g., Python, Java, C++, JavaScript).",
+    "Familiarity with software development methodologies (Agile, Scrum, etc.).",
+    "Basic understanding of data structures, algorithms, and object-oriented programming.",
+    "Experience with version control systems like Git is a plus.",
+    "Strong problem-solving and analytical skills.",
+    "Ability to work independently as well as in a team environment.",
+    "Excellent communication and time-management skills."
+  ],
+  "benefits_and_perks": [
+    "Relocation Assistance (Travel tickets at joining and upon completion)",
+    "Cafeteria and Pluxee meal allowance",
+    "Dhyan Kaksa (meditation space)",
+    "Nap Pods",
+    "Bicycle Breaks",
+    "On-site EV Charging Points",
+    "Sports & Gym (gym, gaming arcade, snooker, massage chairs, and pickleball court)",
+    "Daily shuttles for mobility"
+  ]
+}
