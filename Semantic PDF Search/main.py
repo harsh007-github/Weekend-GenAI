@@ -6,48 +6,60 @@ from dotenv import load_dotenv
 import warnings
 import os
 
-warnings.filterwarnings('ignore', category=UserWarning)
-
 load_dotenv()
+# To ignore pdf font warnings
+warnings.filterwarnings('ignore', category=UserWarning)
 
 embeddingModel = HuggingFaceEmbeddings(
     model='sentence-transformers/all-MiniLM-L6-v2',
     encode_kwargs={"batch_size": 64}
 )
 
-DB_PATH = "faiss_algorithm_index"
+pdf_files = [
+    "PDFs/Introduction_To_Algorithms.pdf",
+    "PDFs/CompetitiveProgramming4Book2.pdf",
+    "PDFs/Competitve_Programmers_Handbook.pdf",
+    "PDFs/The_Algorithm_Design_Manual.pdf",
+    "PDFs/Grokking_Algorithms.pdf",
+]
+
+DB_PATH = "faiss_algorithm_context_index"
+
 
 if os.path.exists(DB_PATH):
     print("Loading existing FAISS index from disk...")
     vector_store = FAISS.load_local(
         DB_PATH, 
         embeddingModel, 
+        # To allow loading untrusted vector db instead of allowing
+        # to create new every time the script is run
         allow_dangerous_deserialization=True
     )
     print("Index loaded instantly from cache!")
 else:
-    print("Index not found. Processing and embedding PDF in batches...")
-    loader = PyPDFLoader("PDFs/Introduction_To_Algorithms.pdf")
-    docs = loader.load()
-    total_pages = len(docs)
-    batch_size = 50
-
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=300,
-        length_function=len,
-        separators=["\n\n", "\n", ".", " "]
-    )
-
+    print("Generating Embeddings...")
     vector_store = None
-    for i in range(0, total_pages, batch_size):
-        batch_pages = docs[i:i+batch_size]
-        batch_chunk = splitter.split_documents(batch_pages)
-        
-        if vector_store is None:
-            vector_store = FAISS.from_documents(batch_chunk, embeddingModel)
-        else:
-            vector_store.add_documents(batch_chunk)
+    for pdf in pdf_files:
+        # Load file one by one
+        loader = PyPDFLoader(pdf)
+        docs = loader.load()
+        total_pages = len(docs)
+        number_of_pages = 50
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=1000,
+            chunk_overlap=300,
+            length_function=len,
+            separators=["\n\n", "\n", ".", " "]
+        )
+        for i in range(0, total_pages, number_of_pages):
+            batch_pages = docs[i:i+number_of_pages]
+            # splitting the batch pages into chunks
+            batch_chunk = splitter.split_documents(batch_pages)
+            
+            if vector_store is None:
+                vector_store = FAISS.from_documents(batch_chunk, embeddingModel)
+            else:
+                vector_store.add_documents(batch_chunk)
 
     vector_store.save_local(DB_PATH)
     print("Batch ingestion complete and index saved locally!")
